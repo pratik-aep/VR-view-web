@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#120c08" />
+    <title>MIRAS — Udaipur 360°</title>
+  </head>
+  <body>
+    <div id="stage" aria-label="360 degree view. Drag to look around."></div>
+
+    <header class="bar top">
+      <div class="brand">
+        <span class="mark">MIRAS</span>
+        <span class="sub" id="view-name">Udaipur · 360°</span>
+      </div>
+      <div id="view-tabs" class="view-tabs" role="tablist" aria-label="Choose a location" hidden></div>
+      <p id="xr-status" class="status" role="status">Checking for VR…</p>
+    </header>
+
+    <nav class="bar bottom" aria-label="View controls">
+      <p class="hint">Drag, swipe or use arrow keys to look around · pinch to zoom</p>
+      <div class="buttons">
+        <button id="btn-play" type="button" hidden>
+          <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" /></svg>
+          <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z" /></svg>
+          <span>Pause</span>
+        </button>
+        <button id="btn-sound" type="button" hidden>
+          <svg class="icon-muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM17 9l5 6M22 9l-5 6" /></svg>
+          <svg class="icon-sound" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM17 8.5a5 5 0 0 1 0 7M19.5 6a8.5 8.5 0 0 1 0 12" /></svg>
+          <span>Sound on</span>
+        </button>
+        <button id="btn-reset" type="button" title="Face the starting direction again">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4.5h4.5" /></svg>
+          <span>Reset view</span>
+        </button>
+        <button id="btn-fullscreen" type="button" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" /></svg>
+          <span>Fullscreen</span>
+        </button>
+        <button id="btn-vr" type="button" class="primary" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8h-5l-2-3h-4l-2 3H3z" /></svg>
+          <span>Enter VR</span>
+        </button>
+      </div>
+    </nav>
+
+    <p class="disclaimer" id="credit">Prototype preview</p>
+
+    <div id="loader" class="overlay" role="progressbar" aria-live="polite">
+      <div class="spinner"></div>
+      <p id="loader-text">Loading 360° view…</p>
+    </div>
+
+    <div id="error" class="overlay" role="alert" hidden>
+      <div class="card">
+        <h2>The 360° view could not be loaded</h2>
+        <p id="error-detail"></p>
+        <p class="small">Check that the file exists under <code>web/public/</code>, then retry.</p>
+        <button id="btn-retry" type="button" class="primary"><span>Retry</span></button>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

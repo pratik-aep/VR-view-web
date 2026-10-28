@@ -1,0 +1,19 @@
+{
+  "name": "miras-vr-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:https": "vite --mode https --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "2.3.0",
+    "vite": "8.3.5"
+  }
+}

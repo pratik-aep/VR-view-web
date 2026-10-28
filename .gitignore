@@ -1,0 +1,15 @@
+# OS / tooling
+.DS_Store
+.claude/
+node_modules/
+dist/
+
+# Not part of this project (iOS capture app prompt, raw downloads, scratch models)
+CODEX_PROMPT_MIRAS_Capture_iOS.md
+ios_photocamera/
+/Udaipur*.mp4
+/ghat/
+/city palace/
+/kari mata */
+/moti magri */
+/models */

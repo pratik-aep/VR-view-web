@@ -1,0 +1,323 @@
+{
+  "_help": "yaw: degrees clockwise from the start view of that panorama (0 = centre of the video, 90 = right, 180 = behind). pitch: degrees up (+) / down (-). Find both with http://localhost:5173/?dev: look at the feature, press C to copy. 'view' ties a hotspot to one view id from CONFIG.views (omit it to show in every view). Any field in 'defaults' can be overridden per hotspot. 'sources' are not shown on screen; they record where each caption's facts come from. Captions phrased 'inside the palace' or 'nearby' describe things not visible from this camera position.",
+  "defaults": {
+    "triggerAngle": 8,
+    "exitAngle": 11,
+    "hoverAngle": 3,
+    "hoverExitAngle": 4.5,
+    "dwellTime": 700,
+    "duration": 8000,
+    "cooldown": 4000
+  },
+  "hotspots": [
+    {
+      "id": "cp-facade",
+      "view": "city_palace",
+      "title": "City Palace of Udaipur",
+      "yaw": 0,
+      "pitch": 30,
+      "caption": "Built on a ridge east of Lake Pichola, begun under Maharana Udai Singh II in the mid-16th century and extended by his successors over nearly 400 years. The facade is about 244 m long and 30 m high.",
+      "sources": ["https://en.wikipedia.org/wiki/City_Palace,_Udaipur"]
+    },
+    {
+      "id": "cp-manek-chowk",
+      "view": "city_palace",
+      "title": "Manek Chowk",
+      "yaw": -30,
+      "pitch": -17,
+      "caption": "You are standing in Manek Chowk, the arena in front of the palace facade reached through the Tripolia gate. Elephant fights were once staged in this courtyard.",
+      "sources": ["https://en.wikipedia.org/wiki/City_Palace,_Udaipur", "https://www.lonelyplanet.com/articles/guide-to-city-palace-udaipur"]
+    },
+    {
+      "id": "cp-architecture",
+      "view": "city_palace",
+      "title": "Granite and Marble",
+      "yaw": -30,
+      "pitch": 17,
+      "caption": "The palace is built entirely of granite and marble in a flamboyant Rajput style. Inside are mirror-work, marble-work, murals, wall paintings, silver-work and inlay-work.",
+      "sources": ["https://en.wikipedia.org/wiki/City_Palace,_Udaipur"]
+    },
+    {
+      "id": "cp-museum",
+      "view": "city_palace",
+      "title": "The Palace Museum",
+      "yaw": 0,
+      "pitch": 7,
+      "caption": "Beyond this facade lie courtyards, halls and galleries. In 1974 part of the palace and the Zenana Mahal, the women's quarters, were converted into a museum.",
+      "sources": ["https://en.wikipedia.org/wiki/City_Palace,_Udaipur"]
+    },
+    {
+      "id": "cp-mor-chowk",
+      "view": "city_palace",
+      "title": "Inside: Mor Chowk",
+      "yaw": 50,
+      "pitch": 15,
+      "caption": "Inside the palace, the Peacock Courtyard has three peacocks made from about 5,000 pieces of glass, representing summer, winter and monsoon.",
+      "sources": ["https://en.wikipedia.org/wiki/City_Palace,_Udaipur"]
+    },
+    {
+      "id": "cp-amar-vilas",
+      "view": "city_palace",
+      "title": "Inside: Amar Vilas",
+      "yaw": 18,
+      "pitch": 37,
+      "caption": "The uppermost court of the palace is Amar Vilas, an elevated garden built in Mughal style as a pleasure pavilion, with cusped arcades around a square marble pool.",
+      "sources": ["https://en.wikipedia.org/wiki/City_Palace,_Udaipur", "https://www.ancient-history-sites.com/?p=123877"]
+    },
+    {
+      "id": "cp-sheesh-mahal",
+      "view": "city_palace",
+      "title": "Inside: Mirrors and Miniatures",
+      "yaw": -62,
+      "pitch": 14,
+      "caption": "Inside are the Sheesh Mahal, or Palace of Mirrors, likely begun in Udai Singh II's reign, and galleries such as Bhim Vilas and Krishna Vilas holding Mewar miniature paintings.",
+      "sources": ["https://en.wikipedia.org/wiki/City_Palace,_Udaipur"]
+    },
+    {
+      "id": "cp-gateways",
+      "view": "city_palace",
+      "title": "The Palace Gateways",
+      "yaw": 89,
+      "pitch": 2,
+      "caption": "Visitors arrive from the city through Badi Pol, the Great Gate (1600), then the triple-arched Tripolia Pol (1725). Eight marble arches, or toranas, stand between the two gates.",
+      "sources": ["https://en.wikipedia.org/wiki/City_Palace,_Udaipur"]
+    },
+    {
+      "id": "cp-eleven-palaces",
+      "view": "city_palace",
+      "title": "A Complex of Palaces",
+      "yaw": -101,
+      "pitch": 3,
+      "caption": "The complex holds several palaces. Fateh Prakash and Shiv Niwas are now heritage hotels; Fateh Prakash houses the Crystal Gallery, ordered in 1877 by Maharana Sajjan Singh and left unopened for 110 years.",
+      "sources": ["https://en.wikipedia.org/wiki/City_Palace,_Udaipur", "https://www.ancient-history-sites.com/?p=123877"]
+    },
+    {
+      "id": "cp-new-capital",
+      "view": "city_palace",
+      "title": "Why Udaipur?",
+      "yaw": 180,
+      "pitch": 5,
+      "caption": "Maharana Udai Singh II chose this site as the new capital of Mewar after Chittorgarh fell to the Mughal emperor Akbar.",
+      "sources": ["https://en.wikipedia.org/wiki/City_Palace,_Udaipur"]
+    },
+
+    {
+      "id": "mm-statue",
+      "view": "moti_magri",
+      "title": "Maharana Pratap Memorial",
+      "yaw": 0,
+      "pitch": 30,
+      "caption": "A bronze statue of the Rajput hero Maharana Pratap on horseback. The memorial was initiated by Maharana Bhupal Singh of Mewar and completed with the help of a public trust.",
+      "sources": ["https://en.wikipedia.org/wiki/Moti_Magri", "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/moti-magri"]
+    },
+    {
+      "id": "mm-chetak",
+      "view": "moti_magri",
+      "title": "Chetak",
+      "yaw": 0,
+      "pitch": 13,
+      "caption": "Tradition names his horse Chetak, ridden at the Battle of Haldighati on 18 June 1576. Contemporary historical sources do not record the horse's name.",
+      "sources": ["https://en.wikipedia.org/wiki/Chetak"]
+    },
+    {
+      "id": "mm-statue-size",
+      "view": "moti_magri",
+      "title": "Eleven Feet of Bronze",
+      "yaw": 0,
+      "pitch": -17,
+      "caption": "According to Incredible India, the all-bronze statue stands 11 feet high and weighs about 7 tonnes.",
+      "sources": ["https://www.incredibleindia.gov.in/en/rajasthan/udaipur/moti-magri"]
+    },
+    {
+      "id": "mm-pearl-hill",
+      "view": "moti_magri",
+      "title": "Moti Magri, the Pearl Hill",
+      "yaw": -110,
+      "pitch": 2,
+      "caption": "Moti Magri means Pearl Hill. This small hillock in Udaipur overlooks Fateh Sagar Lake.",
+      "sources": ["https://en.wikipedia.org/wiki/Moti_Magri"]
+    },
+    {
+      "id": "mm-fateh-sagar",
+      "view": "moti_magri",
+      "title": "Fateh Sagar Lake",
+      "yaw": 62,
+      "pitch": -2,
+      "caption": "First built by Maharana Jai Singh in the 1680s, north of Lake Pichola. After floods washed away its earthen bund, Maharana Fateh Singh rebuilt it in 1889 and it took his name.",
+      "sources": ["https://en.wikipedia.org/wiki/Fateh_Sagar_Lake"]
+    },
+    {
+      "id": "mm-haldighati",
+      "view": "moti_magri",
+      "title": "The Battle of Haldighati",
+      "yaw": -55,
+      "pitch": 4,
+      "caption": "The memorial honours Maharana Pratap's stand at Haldighati in 1576, fought against the Mughal army of Emperor Akbar.",
+      "sources": ["https://en.wikipedia.org/wiki/Moti_Magri", "https://en.wikipedia.org/wiki/Chetak"]
+    },
+    {
+      "id": "mm-museum",
+      "view": "moti_magri",
+      "title": "Memorial Grounds",
+      "yaw": 112,
+      "pitch": -4,
+      "caption": "The memorial grounds include a museum on Maharana Pratap's life, with models of the Battle of Haldighati and of forts such as Kumbhalgarh and Chittorgarh.",
+      "sources": ["https://www.incredibleindia.gov.in/en/rajasthan/udaipur/moti-magri", "https://kupi.com/en-ae/explore/india/udaipur/maharana-pratap-memorial"]
+    },
+    {
+      "id": "mm-hills",
+      "view": "moti_magri",
+      "title": "Hills Around Udaipur",
+      "yaw": 76,
+      "pitch": 4,
+      "caption": "From the hilltop the view opens over Fateh Sagar Lake towards the hills that ring the city.",
+      "sources": ["https://en.wikipedia.org/wiki/Moti_Magri"]
+    },
+
+    {
+      "id": "pl-lake",
+      "view": "pichola_lake",
+      "title": "Lake Pichola",
+      "yaw": 15,
+      "pitch": -10,
+      "caption": "An artificial freshwater lake created in 1362 and named after the nearby village of Picholi. It is about 4 km long, 3 km wide, and up to 8.5 m deep.",
+      "sources": ["https://en.wikipedia.org/wiki/Lake_Pichola"]
+    },
+    {
+      "id": "pl-udai-singh-dam",
+      "view": "pichola_lake",
+      "title": "Enlarged for a New Capital",
+      "yaw": 320,
+      "pitch": 3,
+      "caption": "After founding Udaipur around 1560, Maharana Udai Singh II enlarged the lake with a stone masonry dam at Badipol, raising it to about 15 m.",
+      "sources": ["https://en.wikipedia.org/wiki/Lake_Pichola"]
+    },
+    {
+      "id": "pl-islands",
+      "view": "pichola_lake",
+      "title": "Islands of the Lake",
+      "yaw": 355,
+      "pitch": 6,
+      "caption": "Lake Pichola has four islands: Jag Niwas, home of the marble Lake Palace (1746); Jag Mandir; Mohan Mandir; and Arsi Vilas, a former ammunition depot that is now a bird sanctuary.",
+      "sources": ["https://en.wikipedia.org/wiki/Lake_Pichola"]
+    },
+    {
+      "id": "pl-gangaur",
+      "view": "pichola_lake",
+      "title": "The Gangaur Festival",
+      "yaw": 40,
+      "pitch": -3,
+      "caption": "Mohan Mandir, built on an island between 1628 and 1652, was where the Maharana watched the annual Gangaur festival on the lake.",
+      "sources": ["https://en.wikipedia.org/wiki/Lake_Pichola"]
+    },
+    {
+      "id": "pl-bagore-ki-haveli",
+      "view": "pichola_lake",
+      "title": "Bagore ki Haveli",
+      "yaw": 150,
+      "pitch": 6,
+      "caption": "On the waterfront at Gangaur Ghat. Built by Amar Chand Badwa, Mewar's prime minister (1751 to 1778); a triple-arched gateway was added in 1878. It has been a museum since 1986.",
+      "sources": ["https://en.wikipedia.org/wiki/Bagore_Ki_Haveli", "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/bagore-ki-haveli"]
+    },
+    {
+      "id": "pl-ghat",
+      "view": "pichola_lake",
+      "title": "The Ghats",
+      "yaw": 170,
+      "pitch": -6,
+      "caption": "Stone steps and platforms, called ghats and chabutaras, line the lake's shores. This one, Gangaur Ghat, lies beside Bagore ki Haveli.",
+      "sources": ["https://rajasthandriver.com/tourist-attractions/udaipur/lake-pichola", "https://en.wikipedia.org/wiki/Bagore_Ki_Haveli"]
+    },
+    {
+      "id": "pl-havelis",
+      "view": "pichola_lake",
+      "title": "Lakefront Havelis",
+      "yaw": 182,
+      "pitch": 18,
+      "caption": "Havelis, the traditional mansions of the old city, overlook the lake. Many are now hotels; Bagore ki Haveli houses a museum and holds a cultural show every evening.",
+      "sources": ["https://rajasthandriver.com/tourist-attractions/udaipur/lake-pichola", "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/bagore-ki-haveli"]
+    },
+    {
+      "id": "pl-sunset-shore",
+      "view": "pichola_lake",
+      "title": "Lakeside Buildings",
+      "yaw": 250,
+      "pitch": 12,
+      "caption": "Buildings rise straight from the water along this shore. Boats leave from Bansi Ghat at the City Palace for other parts of the lake.",
+      "sources": ["https://en.wikipedia.org/wiki/Lake_Pichola"]
+    },
+
+    {
+      "id": "km-hill",
+      "view": "karni_mata",
+      "title": "Machla Magra Hill",
+      "yaw": -139,
+      "pitch": 10,
+      "caption": "You are on Machla Magra, the hill of the Shri Manshapurna Karni Mata Temple, which enshrines a stone idol of Karni Mata. Only pedestrians may enter the hill boundary.",
+      "sources": ["https://en.wikipedia.org/wiki/Karni_Mata,_Udaipur"]
+    },
+    {
+      "id": "km-goddess",
+      "view": "karni_mata",
+      "title": "Who Is Karni Mata?",
+      "yaw": -52,
+      "pitch": 38,
+      "caption": "Karni Mata was a sage from a Charan family, worshipped by her followers as an incarnation of the goddess Durga. Her best-known temple is at Deshnoke near Bikaner.",
+      "sources": ["https://en.wikipedia.org/wiki/Karni_Mata", "https://en.wikipedia.org/wiki/Karni_Mata_Temple"]
+    },
+    {
+      "id": "km-lakes-below",
+      "view": "karni_mata",
+      "title": "The Lakes Below",
+      "yaw": -15,
+      "pitch": -8,
+      "caption": "The temple stands near Doodh Talai lake, with views over the city and its lakes, including Lake Pichola.",
+      "sources": ["https://en.wikipedia.org/wiki/Karni_Mata,_Udaipur", "https://trekgo.in/blog/mansapurna-karni-ropeway-udaipur"]
+    },
+    {
+      "id": "km-ropeway",
+      "view": "karni_mata",
+      "title": "The Ropeway",
+      "yaw": 37,
+      "pitch": -20,
+      "caption": "A cable car links Deendayal Upadhyay Park at the foot of the hill with the hilltop temple. It opened in 2008 and is described as Rajasthan's first ropeway.",
+      "sources": ["https://trekgo.in/blog/mansapurna-karni-ropeway-udaipur", "https://chalbanjare.com/rajasthan/tourist-attraction/manshapurn-karni-mata-ropeway"]
+    },
+    {
+      "id": "km-panorama",
+      "view": "karni_mata",
+      "title": "View Over the City",
+      "yaw": 8,
+      "pitch": 2,
+      "caption": "From up here visitors look out over Lake Pichola, the City Palace, Jag Mandir and the surrounding Aravalli hills. Sunset is the most popular time to come.",
+      "sources": ["https://trekgo.in/blog/mansapurna-karni-ropeway-udaipur"]
+    },
+    {
+      "id": "km-city",
+      "view": "karni_mata",
+      "title": "Udaipur at Night",
+      "yaw": 75,
+      "pitch": 1,
+      "caption": "Udaipur grew around its lakes after Maharana Udai Singh II made it the capital of Mewar around 1560.",
+      "sources": ["https://en.wikipedia.org/wiki/Lake_Pichola", "https://en.wikipedia.org/wiki/City_Palace,_Udaipur"]
+    },
+    {
+      "id": "km-aravalli",
+      "view": "karni_mata",
+      "title": "Aravalli Hills",
+      "yaw": 145,
+      "pitch": 18,
+      "caption": "The Aravalli hills surround Udaipur and frame the view from this hilltop over the city's lakes.",
+      "sources": ["https://trekgo.in/blog/mansapurna-karni-ropeway-udaipur"]
+    },
+    {
+      "id": "km-walk",
+      "view": "karni_mata",
+      "title": "The Pilgrims' Path",
+      "yaw": -74,
+      "pitch": -22,
+      "caption": "Besides the ropeway, a winding footpath east of Doodh Talai climbs to the hilltop temple, used by pilgrims.",
+      "sources": ["https://www.nonprod.lonelyplanet.com/points-of-interest/machla-magra/1561667"]
+    }
+  ]
+}
